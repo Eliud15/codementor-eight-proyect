@@ -1,0 +1,221 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+svg{
+    cursor: pointer;
+}
+h1{
+   font-size: 2em;
+   color: hsl(271, 36%, 24%);
+}
+h4{
+    color: hsl(270, 7%, 64%);
+}
+#descipcion{
+    position: relative;
+    display: flex;flex-direction: column;
+    justify-content: center;
+    float: right;
+    right: 10px;
+    width: 30%;
+    margin: 0 auto;
+    z-index: 5000;
+}
+#main-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  align-items: center;
+    /* background-color: rgb(12, 7, 22); */
+}
+#main-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(to top ,hsl(276, 55%, 52%),hsl(293, 100%, 63%));
+    border-bottom-left-radius: 60rem;
+    border-bottom-right-radius: 60rem;
+}
+#bg-phone{
+    position: relative;;
+    max-width:  260px;
+    padding: 10px;
+    height: auto;
+    margin-left: 340px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    z-index: 2;
+}
+#bg-phone::after {
+    content: "";
+    position: absolute;
+    width: 185px;
+    height: 158px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: -130px;
+    left: 30px;
+    z-index: 150;
+}
+#header-phone{
+    position: relative;
+    width: 90%;
+    height: 70px;
+    padding: 10px;
+    background: linear-gradient(to right ,hsl(276, 55%, 52%),hsl(293, 100%, 63%));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 100;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+#img-profile{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#name-profile{
+    margin-top: -5px;
+    margin-left: 10px;
+}
+#name{
+    color: #ffffff;
+    margin-bottom: -10px;
+}
+#info{
+   font-size: 10px;
+   color: rgb(177, 175, 175);
+   
+}
+#icon-menu{
+    margin-top: 10px;
+    position: relative;;
+float: right;
+right: -50px;
+}
+main p{
+    font-size: 10px;
+   font-weight: bolder;
+}
+.first-response{
+     color: hsl(264, 100%, 61%);
+}
+section main {
+    padding: 10px;
+}
+#img-dogs-container {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    float: right;
+    right: 20px;
+}
+.img-dogs{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+#other-response{
+    width: 150px;
+    margin-top: 10px;
+    float: right;
+    right: 10px;
+    color: rgb(114, 113, 113) !important;
+}
+#footer-chat{
+    position: relative;
+}
+.final{
+    margin-top: 150px;
+}
+.price-container{
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    background: linear-gradient(to left ,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 20px;
+    margin-left: 0;
+    color: #ffffff;
+    border-radius: 10px;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+h5{
+    position: relative;
+    float: right;
+   transform: translateX(80px);
+}
+#icon-arrow{
+    position: relative;
+    float: right;
+    right: 20px;
+    cursor: pointer;
+}
+.attribution{
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    z-index: 10000;
+    font-size: 10px;
+    color: #ffffff;
+}
+a{
+    color: darkcyan;
+}
+@media screen and (max-width:900px) {
+    #main-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #main-container::before{
+        width: 400px;
+        height: 520px;
+    }
+    #bg-phone {
+        margin-top: 70px;
+        margin-left: 0;
+    }
+    #descipcion{
+        width: 90%;
+        padding: 10px;
+       text-align: center;
+    }
+}
+@media screen and (max-width:594px) {
+    #main-container::before{
+        width: 300px;
+    }
+}
+@media screen and (max-width:465px) {
+    #main-container::before{
+        left: -230px;
+        width: 400px;
+        height: 520px;
+    }
+    #bg-phone {
+        margin-top: 200px;
+    }
+}
